@@ -296,7 +296,29 @@
     </nav>
 
     <div id="home" class="content">
-        <h1>Welcome to Our Online learning</h1>
+      <style>
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee h1 {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 25s linear infinite; /* slower speed */
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+
+<div class="marquee">
+  <h1>Welcome to Our Online Learning</h1>
+</div>
+
         <p>We are here to help you succeed. Explore our services, learn with us, and grow together in a supportive
             environment.</p>
 
@@ -432,3 +454,4 @@
 
 
 </html>
+
